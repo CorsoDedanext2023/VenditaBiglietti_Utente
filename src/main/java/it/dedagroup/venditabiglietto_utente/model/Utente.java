@@ -26,7 +26,7 @@ public class Utente {
 	@Column(nullable = false)
 	private String cognome;
 	@Column(nullable = false)
-	private LocalDate data_di_nascita;
+	private LocalDate dataDiNascita;
 	@Column(nullable = false)
 	private Ruolo ruolo;
 	@Column(nullable = false , unique = true)

@@ -1,5 +1,7 @@
 package it.dedagroup.venditabiglietto_utente.serviceimpl;
 
+import java.time.LocalDate;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -28,8 +30,8 @@ public class UtenteServiceImpl implements UtenteServiceDef {
 	}
 
 	@Override
-	public Utente findByData_Di_Nascita(String data_di_nascita) {
-		return utenteRepository.findByData_Di_Nascita(data_di_nascita).orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST));
+	public Utente findByData_Di_Nascita(LocalDate data_di_nascita) {
+		return utenteRepository.findByDataDiNascita(data_di_nascita).orElseThrow(() -> new ResponseStatusException(HttpStatus.BAD_REQUEST));
 	}
 
 	@Override

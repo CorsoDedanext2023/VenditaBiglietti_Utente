@@ -9,7 +9,8 @@ public enum Ruolo {
 	
 	ADMIN("ADMIN"),
 	SUPER_ADMIN("SUPER_ADMIN"),
-	VENDITORE("VENDITORE");
+	VENDITORE("VENDITORE"),
+	CLIENTE("CLIENTE");
 	@Getter @Setter
 	private String ruolo;
 	
